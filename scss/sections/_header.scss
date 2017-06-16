@@ -1,0 +1,278 @@
+// Hidden Nav Styling
+
+header {
+  position: relative;
+}
+
+.hidden-nav-wrapper {
+  display: none;
+  @include clearfix;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+.site-branding {
+  @include span(6 of 12);
+}
+
+.hidden-mugshot {
+  float: left;
+  width: 60px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.site-title {
+  float: left;
+  margin: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #000;
+
+  @media (max-width: 511px) {
+    font-size: 16px;
+  }
+}
+
+.hidden-navigation {
+  @include span(6 of 12 last);
+  @include clearfix;
+}
+
+.menu-toggle {
+  font-size: 22px;
+  display: block;
+  padding-top: 1em;
+  text-align: center;
+  cursor: pointer;
+
+  @media (min-width: 915px) {
+    display: none;
+  }
+}
+
+#menu-hidden-nav {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  @media (max-width: 915px) {
+    display: none;
+    position: absolute;
+    top: 4.7em;
+    width: 45%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+#menu-hidden-nav li {
+  @include span( 3 of 15 inside);
+  display: inline-block;
+
+  @media (max-width: 915px) {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+
+#menu-hidden-nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  padding-top: 1.5em;
+  padding-bottom: 1.6em;
+
+  @media (max-width: 915px) {
+    padding: 0;
+    line-height: 35px;
+    color: #fff;
+  }
+}
+
+.sticky {
+  display: block;
+}
+
+.active {
+  background-color: #2F0C0C;
+  color: #fff !important;
+}
+
+// .active:nth-child(1) {
+//
+//   @media (max-width: 915px) {
+//     border-top-left-radius: 7px;
+//     border-top-right-radius: 7px;
+//   }
+// }
+
+// Hero Styling
+
+header {
+  height: 100vh;
+  width: 100%;
+  min-height: 380px;
+  color: #fff;
+  text-align: center;
+  background-color: #cf4646;
+
+  @media (max-width: 480px) {
+    // min-height: 100vh;
+  }
+}
+
+.header-title {
+  margin: 0;
+  padding-top: .5em;
+  font-size: 43px;
+
+  @media (min-width: 480px) {
+    padding-top: 0.5em;
+    font-size: 79px;
+  }
+
+  @media (min-width: 980px) {
+    font-size: 92px;
+    padding-top: 0.5em;
+  }
+
+  @media (max-height: 340px) {
+    padding-top: .2em;
+  }
+}
+
+.header-subtitle {
+  margin: 0;
+  font-size: 25px;
+  padding: 0 26px;
+
+  @media (min-width: 480px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 980px) {
+    font-size:40px;
+    padding-top: 0.5em;
+  }
+}
+
+.mugshot-wrap {
+  @include container(260px);
+
+  @media (min-width: 480px) {
+    @include container(325px);
+  }
+
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-height: 414px) { 
+    display: none;
+  }
+}
+
+.header-cta {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.11111rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.88889rem 1.77778rem 0.94444rem 1.77778rem;
+  font-size: 20px;
+  color: #FFFFFF;
+  transition: background-color 400ms ease-out;
+  width: 50%;
+  border-radius: 3px;
+  background-color: transparent;
+  border: solid 1px #fff;
+
+  @media (max-width: 480px) {
+    width: 80%;
+    margin-top: 1em;
+  }
+
+  @media (min-width: 980px) {
+    width: 30%;
+  }
+
+  @media (max-height: 650px) {
+
+  }
+
+  @media (max-height: 650px) {
+      margin-top: 1.5em;
+  }
+}
+
+.header-cta:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+//  Main Nav Styling
+
+.main-navigation {
+  @include clearfix;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  @media (max-height: 650px) {
+      display: none;
+  }
+}
+
+#menu-main-nav {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #333333;
+  background-color: rgba(0,0,0,.6);
+}
+
+#menu-main-nav li {
+  @include span(3 of 15 inside);
+  display: inline-block;
+}
+
+#menu-main-nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 2em 0;
+  transition-duration: .3s;
+}
+
+#menu-main-nav a:hover {
+  background-color: #2F0C0C;
+}
