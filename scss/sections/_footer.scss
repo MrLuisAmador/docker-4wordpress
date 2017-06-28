@@ -1,0 +1,90 @@
+.site-footer {
+  @include clearfix;
+  background-color: #444;
+  color: #999;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 12px;
+  clear: both;
+}
+
+.footer__inner-wrap {
+
+}
+
+.site-info {
+  text-align: center;
+  float: none;
+  margin: 12px 0;
+  padding: 0 3%;
+
+  a {
+    color: #999;
+  }
+}
+
+.footer-socail-wrap {
+  text-align: center;
+  float: none;
+  padding: 0 3%;
+}
+
+.social-icons > li {
+  display: inline-block;
+  padding: 0 0.3%;
+}
+
+@media screen and (min-width: 769px) {
+  .site-info {
+    float: left;
+    padding: 0 1% 0 3%;
+  }
+
+  .footer-social-wrap {
+    float: right;
+    padding: 0 3% 0 1%;
+    margin-bottom: 8px;
+    width: 30%;
+  }
+
+  .social-icons > li {
+    display: inline-block;
+    padding: 0 1%;
+  }
+
+}
+
+.social-icons {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.social-icons  a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.social-icons .fa-linkedin-square:hover  {
+  color: #287bbc;
+  transition: color 400ms ease-out;
+}
+
+.social-icons .fa-twitter-square:hover {
+  color: #4099FF;
+  transition: color 400ms ease-out;
+}
+
+.social-icons .fa-google-plus-square:hover {
+  color: #dd4b39;
+  transition: color 400ms ease-out;
+}
+
+.social-icons .fa-github-square:hover {
+  color: #F1AD72;
+  transition: color 400ms ease-out;
+}
