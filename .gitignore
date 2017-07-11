@@ -8,6 +8,7 @@ Thumbs.db
 *.log
 
 node_modules/
+assets/
 .sass-cache/
 bower_components/
 *.map

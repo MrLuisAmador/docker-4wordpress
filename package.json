@@ -1,13 +1,24 @@
 {
-  "name": "My portfolio website",
+  "name": "my-portfolio-website",
   "version": "0.0.1",
   "description": "My portofolio website to showoff my talents",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --watch"
   },
   "author": "Luis Amador",
   "license": "gpl",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "postcss-cssnext": "^3.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
 }
