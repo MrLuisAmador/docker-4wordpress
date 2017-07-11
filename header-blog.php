@@ -29,7 +29,7 @@
 	<div class="blog-nav-wrapper"> 
 		<div class="site-branding">
 			<div class="hidden-mugshot">
-				<img src="<?php echo get_template_directory_uri() . "/img/mugshot.png"?>" alt="" />
+				<img src="<?php echo get_template_directory_uri() . "/assets/img/mugshot.png"?>" alt="" />
 			</div>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
