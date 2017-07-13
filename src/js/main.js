@@ -1,3 +1,6 @@
+require('normalize.css');
+require('../css/main.css');
+
 jQuery(function($) {
 // Make Row Equal Height
 

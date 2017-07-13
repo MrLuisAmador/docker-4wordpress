@@ -1,5 +1,0 @@
-//Change the width to percentage
-
-@function percent($target, $context: $row-width) {
-  @return ($target/$context) * 100%;
-}

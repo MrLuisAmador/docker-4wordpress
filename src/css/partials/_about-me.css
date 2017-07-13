@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+The About Me styling
+--------------------------------------------------------------*/
+#about-me {
+  background-color: #fff;
+  color: #000; }
+
+.about-me__wrapper {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+  .about-me__wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.about-me__title {
+  text-align: center; }
+
+.my-name {
+  text-align: center; }
+
+.about-me__content h4, .about-me__content p {
+  display: inline-block; }
+
+.about-me__content h3 {
+  font-size: 22px;
+  margin-top: 2.5em; }
+  @media (max-width: 480px) {
+    .about-me__content h3 {
+      font-size: 18px; } }
+
+.about-me__content h4 {
+  margin-bottom: 0; }
+  @media (max-width: 480px) {
+    .about-me__content h4 {
+      font-size: 15px;
+      margin-bottom: .5em; } }
+
+.about-me__content li {
+  margin-bottom: 0.5em;
+  line-height: 20px; }
+
+.about-me__content .underline {
+  text-decoration: underline; }
+
+.about-me__content .see-resume {
+  margin-top: 2em;
+  text-transform: uppercase; }
