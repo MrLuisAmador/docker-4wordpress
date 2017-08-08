@@ -1,5 +1,5 @@
-require('normalize.css');
-require('../css/main.css');
+// require('normalize.css');
+require('../css/main.scss');
 
 jQuery(function($) {
 // Make Row Equal Height
@@ -100,3 +100,5 @@ jQuery(function($) {
   //  ]
   // });
 });
+
+console.log('Luis');
