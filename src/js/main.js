@@ -1,5 +1,6 @@
 // require('normalize.css');
-require('../css/main.scss');
+require('../css/main.scss'); 
+// var Typed = require('type');
 
 jQuery(function($) {
 // Make Row Equal Height
@@ -99,6 +100,14 @@ jQuery(function($) {
   //    }
   //  ]
   // });
+  
+  var typed = new Typed('.typejs', {
+    strings: ["because I love what I do.."],
+    typeSpeed: 60
+  });
+
+
+
 });
 
 console.log('Luis');

@@ -4,6 +4,10 @@ The header styling
 header {
   position: relative; }
 
+.site-header__center {
+    width: 100%;
+}
+
 .hidden-nav-wrapper {
   display: none;
   width: 100%;
@@ -198,7 +202,7 @@ header {
       margin-top: 1em; } }
   @media (min-width: 980px) {
     .header-cta {
-      width: 45%; } }
+      width: 30%; } }
   @media (max-height: 650px) {
     .header-cta {
       margin-top: 1.5em; } }

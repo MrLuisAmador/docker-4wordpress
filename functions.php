@@ -135,6 +135,8 @@ function la_scripts() {
 
 	wp_enqueue_script( 'la-isotype-js', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array('jquery'), '20120206', true );
 
+	wp_enqueue_script( 'typedjs', get_template_directory_uri() . '/assets/js/typed.min.js', array('jquery'), '20120206', true );
+
 	wp_enqueue_script( 'la-main-js', get_template_directory_uri() . '/assets/js/bundle.js', array('jquery'), '20120206', true );
 
 	wp_enqueue_script( 'la-slick-js', 'http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array('jquery'), '20120206', true );
