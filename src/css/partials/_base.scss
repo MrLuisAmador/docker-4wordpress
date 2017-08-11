@@ -1,12 +1,20 @@
 /*--------------------------------------------------------------
 Basic html's elements styling and resets
 --------------------------------------------------------------*/
+html {
+  font-family: 'Alice', serif; 
+  font-size: 62.5%;
+}
+
 body {
-  font-family: 'Alice', serif; }
+ font-size: 1.6rem;
+}
+
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
 section {
   padding-top: 2em;
