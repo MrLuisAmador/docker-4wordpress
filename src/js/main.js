@@ -102,7 +102,7 @@ jQuery(function($) {
   // });
   
   var typed = new Typed('.typejs', {
-    strings: ["because I love what I do.."],
+    strings: ["because I love what I do."],
     typeSpeed: 60
   });
 
