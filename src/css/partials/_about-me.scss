@@ -21,7 +21,13 @@ The About Me styling
   text-align: center; }
 
 .about-me__content h4, .about-me__content p {
-  display: inline-block; }
+  display: block;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+
+}
 
 .about-me__content h3 {
   font-size: 22px;

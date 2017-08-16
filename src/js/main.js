@@ -1,6 +1,6 @@
 // require('normalize.css');
 require('../css/main.scss'); 
-// var Typed = require('type');
+// var Typed = require('Typed');
 
 jQuery(function($) {
 // Make Row Equal Height
