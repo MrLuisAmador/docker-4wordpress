@@ -15,7 +15,9 @@ The About Me styling
     clear: both; }
 
 .about-me__title {
-  text-align: center; }
+  text-align: center; 
+  color: #313131;
+}
 
 .my-name {
   text-align: center; }
@@ -23,10 +25,13 @@ The About Me styling
 .about-me__content h4, .about-me__content p {
   display: block;
   line-height: 1.8;
-  text-align: center;
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: #313131;
 
+  @media(min-width: 668px) {
+    text-align: center;
+  }
 }
 
 .about-me__content h3 {
