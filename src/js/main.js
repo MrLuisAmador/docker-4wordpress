@@ -106,6 +106,12 @@ jQuery(function($) {
     typeSpeed: 60
   });
 
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
+
 
 
 });

@@ -1,0 +1,60 @@
+.projects {
+    background-color: #D35400;
+    padding: 6.0rem 0 0;
+  }
+
+  .projects__title-title-wrap {
+    margin-bottom: 6rem;
+  }
+  
+  .projects__title {
+    text-align: center;
+    margin-top : 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+  }
+
+  .projects__sub-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .grid {
+    max-width: 100%;
+  }
+  
+  .grid-item { 
+    width: 25%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  }
+  
+  .grid-item img { 
+    max-width: 100%; 
+    height: auto; 
+    vertical-align: middle;
+  }
+  
+  .grid-item ul { 
+    margin: 0;
+  }
+  
+  
+  .project-box__content {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    background-color: #fff;
+    padding: 2rem 0;
+
+        color: #313131;
+        font-weight: bold;
+  }
+  
+  .content__item {
+    padding-left: .5rem;
+  }

@@ -25,10 +25,10 @@ get_header(); ?>
 
   				<?php endwhile; wp_reset_postdata(); // End of the loop. ?>
 				</div>
-      </section><!-- End About Me Section -->
+			</section><!-- End About Me Section -->
 
-			<!-- Skills Section | This is a Custom Post Type -->
-      <section id="skills" class="scrollto">
+				<!-- Skills Section | This is a Custom Post Type -->
+				<section id="skills" class="scrollto">
         <?php $query = new WP_query(array('post_type' => 'skill', 'posts_per_page' => 4)); ?>
 
 				<h1 class="blog-title">My Skills</h1>
@@ -46,6 +46,35 @@ get_header(); ?>
 					<?php endwhile; wp_reset_postdata(); // End of the loop. ?>
 				</div>
       </section><!-- End Skills Section -->
+			
+			<!-- Projects Section | This is a Custom Field for HomePage -->
+			<section id="projects" class="projects">
+					<?php $query = new WP_query(array('post_type' => 'my_projects')); ?>
+					<div class="projects__title-title-wrap">
+						<h2 class="projects__title">Projects</h2>
+						
+						<h3 class="projects__sub-title">List of all the Projects I have been a part of.</h3>
+					</div>
+
+					<div class="grid">
+						<?php while ( $query->have_posts() ) : $query->the_post(); ?>	
+								<a target="_blank" href="<?php the_field('platform_link'); ?>">				
+									<div class="grid-item">
+										<div class="project-box">
+											<div class="project-box__img">
+												<?php the_post_thumbnail('full'); ?>
+											</div>
+											
+											<ul class="project-box__content">
+												<li class="content__item project-box__tax">Platform:</li>
+												<li class="content__item project-box__tax"><?php the_field('platform_type'); ?></li>      
+											</ul>     
+										</div>    
+									</div>
+								</a>
+						<?php endwhile; wp_reset_postdata(); // End of the loop. ?>
+					</div>
+			</section>
 
 			<!-- Blog Section | This is WordPress Code to display the newest two blogs on the Home Page -->
 			<section id="blog" class="scrollto">
