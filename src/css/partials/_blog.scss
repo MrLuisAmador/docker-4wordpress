@@ -2,12 +2,15 @@
 The Blog styling
 --------------------------------------------------------------*/
 #blog {
-  padding-top: 6rem;
-  padding-bottom: 6rem; }
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
 
 .blog-title {
   text-align: center;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif; 
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
 
 .blog-outer-wrap::after {
   clear: both;

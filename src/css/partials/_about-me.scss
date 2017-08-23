@@ -3,7 +3,8 @@ The About Me styling
 --------------------------------------------------------------*/
 #about-me {
   background-color: #fff;
-  color: #000; }
+  color: #000; 
+}
 
 .about-me__wrapper {
   max-width: 70%;
@@ -17,6 +18,8 @@ The About Me styling
 .about-me__title {
   text-align: center; 
   color: #313131;
+  margin-top: 0;
+  margin-bottom: 6rem;
 }
 
 .my-name {

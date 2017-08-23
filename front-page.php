@@ -56,22 +56,37 @@ get_header(); ?>
 						<h3 class="projects__sub-title">List of all the Projects I have been a part of.</h3>
 					</div>
 
+					<div class="filter-btn">
+							<button data-filter="*">All</button>
+
+							<button data-filter=".magento-projects">Magento</button>
+
+							<button data-filter=".wordpress-projects">WordPress</button>
+
+							<button data-filter=".misc">Misc</button>
+					</div>
+
 					<div class="grid">
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>	
-								<a target="_blank" href="<?php the_field('platform_link'); ?>">				
-									<div class="grid-item">
-										<div class="project-box">
-											<div class="project-box__img">
-												<?php the_post_thumbnail('full'); ?>
-											</div>
 											
-											<ul class="project-box__content">
-												<li class="content__item project-box__tax">Platform:</li>
-												<li class="content__item project-box__tax"><?php the_field('platform_type'); ?></li>      
-											</ul>     
-										</div>    
+									<div class="grid-item <?php $terms = get_the_terms( $post->ID , 'my_projects_categories' );
+															foreach ( $terms as $term ) {
+																echo $term->slug;
+															}
+													?>">
+										<a class="grid-item__link" target="_blank" href="<?php the_field('platform_link'); ?>">	
+											<div class="project-box">
+												<div class="project-box__img">
+													<?php the_post_thumbnail('full'); ?>
+												</div>
+												
+												<ul class="project-box__content">
+													<li class="content__item project-box__tax">Platform:</li>
+													<li class="content__item project-box__tax"><?php the_field('platform_type'); ?></li>      
+												</ul>     
+											</div>
+										</a>
 									</div>
-								</a>
 						<?php endwhile; wp_reset_postdata(); // End of the loop. ?>
 					</div>
 			</section>

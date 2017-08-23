@@ -106,14 +106,19 @@ jQuery(function($) {
     typeSpeed: 60
   });
 
-  $('.grid').isotope({
+  var $grid = $('.grid').isotope({
     // options
     itemSelector: '.grid-item',
     layoutMode: 'fitRows'
   });
 
+  $grid.isotope({ filter: '*' });
+
+  $('.filter-btn').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+  
 
 
 });
-
-console.log('Luis');
