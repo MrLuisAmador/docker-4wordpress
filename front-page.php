@@ -27,28 +27,32 @@ get_header(); ?>
 				</div>
 			</section><!-- End About Me Section -->
 
-				<!-- Skills Section | This is a Custom Post Type -->
-				<section id="skills" class="scrollto">
-        <?php $query = new WP_query(array('post_type' => 'skill', 'posts_per_page' => 4)); ?>
+			<!-- Skills Section | This is a Custom Post Type -->
+			<section id="skills" class="scrollto">
+       			<?php $query = new WP_query(array('post_type' => 'skill', 'posts_per_page' => 4)); ?>
 
-				<h1 class="blog-title">My Skills</h1>
+				<h1 class="blog-title">My Expertise</h1>
 
 				<div class="skills-wrapper">
-        	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+        			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
 					<div class="skills-inner-wrap">
 						<h1 class="skills-title"><?php the_title(); ?></h1>
 
 						<div class="skills-content">
-	            <?php the_content(); ?>
-	          </div>
+							<?php the_content(); ?>
+						</div>
 					</div>
 
 					<?php endwhile; wp_reset_postdata(); // End of the loop. ?>
 				</div>
-      </section><!-- End Skills Section -->
+      		</section><!-- End Skills Section -->
+
+
+		
 			
 			<!-- Projects Section | This is a Custom Field for HomePage -->
-			<section id="projects" class="projects">
+			<section id="projects" class="projects scrollto">
 					<?php $query = new WP_query(array('post_type' => 'my_projects')); ?>
 					<div class="projects__title-title-wrap">
 						<h2 class="projects__title">Projects</h2>

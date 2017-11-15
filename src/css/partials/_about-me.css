@@ -3,45 +3,25 @@ The About Me styling
 --------------------------------------------------------------*/
 #about-me {
   background-color: #fff;
-  color: #000; 
-}
+  color: #000; }
 
 .about-me__wrapper {
   max-width: 70%;
   margin-left: auto;
-  margin-right: auto; 
-
-  @media (max-width: 768px) {
-    max-width: 80%;
-  }
-
-}
+  margin-right: auto; }
   .about-me__wrapper:after {
     content: " ";
     display: block;
     clear: both; }
 
 .about-me__title {
-  text-align: center; 
-  color: #313131;
-  margin-top: 0;
-  margin-bottom: 6rem;
-}
+  text-align: center; }
 
 .my-name {
   text-align: center; }
 
 .about-me__content h4, .about-me__content p {
-  display: block;
-  line-height: 1.8;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: #313131;
-
-  @media(min-width: 668px) {
-    text-align: center;
-  }
-}
+  display: inline-block; }
 
 .about-me__content h3 {
   font-size: 22px;

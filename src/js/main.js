@@ -5,7 +5,6 @@ require('../css/main.scss');
 jQuery(function($) {
 // Make Row Equal Height
 
-  $('.skills-content').equalHeights();
 
   //  Add background to skills boxes
 
@@ -17,13 +16,6 @@ jQuery(function($) {
   $('.skills-inner-wrap').on('mouseleave', function(){
     $(this).find('.skills-title').removeClass('skills-hover-title');
     $(this).find('.skills-content').removeClass('skills-hover-content');
-  });
-
-  // IsoType
-
-  $('.skills-wrapper').isotope({
-    itemSelector: '.skills-inner-wrap',
-    layoutMode: 'fitRows'
   });
 
   // Main Menu Scroll Effect -- I don't think I need both this code and the stickyNavbar library but oh well
