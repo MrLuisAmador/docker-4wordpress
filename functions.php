@@ -119,7 +119,7 @@ function la_scripts() {
 
 	wp_enqueue_style( 'body-font','https://fonts.googleapis.com/css?family=Alice');
 
-	wp_enqueue_style( 'la-slick-css','http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css');
+	wp_enqueue_style( 'la-slick-css','https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css');
 
 	wp_enqueue_style( 'la-main-style', get_template_directory_uri() . '/assets/css/main.css');
 
@@ -139,7 +139,7 @@ function la_scripts() {
 
 	wp_enqueue_script( 'la-main-js', get_template_directory_uri() . '/assets/js/bundle.js', array('jquery'), '20120206', true );
 
-	wp_enqueue_script( 'la-slick-js', 'http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array('jquery'), '20120206', true );
+	wp_enqueue_script( 'la-slick-js', 'https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array('jquery'), '20120206', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
