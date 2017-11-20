@@ -67,7 +67,7 @@ get_header(); ?>
 
 							<button data-filter=".wordpress-projects">WordPress</button>
 
-							<button data-filter=".misc">Misc</button>
+							<button data-filter=".misc-projects">Misc</button>
 					</div>
 
 					<div class="grid">
