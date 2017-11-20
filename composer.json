@@ -1,0 +1,19 @@
+{
+    "name": "ashworthcreative/development-template",
+    "type": "project",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "wimg/php-compatibility": "*"
+    },
+    "authors": [
+        {
+            "name": "Ken Newman",
+            "email": "ken@ashworthcreative.com"
+        },
+        {
+            "name": "Luis Amador",
+            "email": "luis@ashworthcreative.com"
+        }
+    ]
+}

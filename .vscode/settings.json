@@ -1,0 +1,21 @@
+{
+    "phpcs.standard": "WordPress",
+    "phpcs.enable": true,
+    "phpcs.ignore": "html/",
+    "php.suggest.basic": false,
+    "deploy": {
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "WP Engine",
+                "description": "The WP Engine Site",
+                "host": "yourdomain.sftp.wpengine.com",
+                "port": 2222,
+                "user": "yourname",
+                "password": "yourpassword",
+                "checkBeforeDeploy": true,
+                "dir": "/wp-content/themes/yourtheme"
+            }
+        ]
+    }
+}
