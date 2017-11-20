@@ -49,14 +49,14 @@ get_header(); ?>
       		</section><!-- End Skills Section -->
 
 
-		
-			
+
+
 			<!-- Projects Section | This is a Custom Field for HomePage -->
 			<section id="projects" class="projects scrollto">
 					<?php $query = new WP_query(array('post_type' => 'my_projects')); ?>
 					<div class="projects__title-title-wrap">
 						<h2 class="projects__title">Projects</h2>
-						
+
 						<h3 class="projects__sub-title">List of all the Projects I have been a part of.</h3>
 					</div>
 
@@ -71,23 +71,23 @@ get_header(); ?>
 					</div>
 
 					<div class="grid">
-						<?php while ( $query->have_posts() ) : $query->the_post(); ?>	
-											
+						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
 									<div class="grid-item <?php $terms = get_the_terms( $post->ID , 'my_projects_categories' );
 															foreach ( $terms as $term ) {
 																echo $term->slug;
 															}
 													?>">
-										<a class="grid-item__link" target="_blank" href="<?php the_field('platform_link'); ?>">	
+										<a class="grid-item__link" target="_blank" href="<?php the_field('platform_link'); ?>">
 											<div class="project-box">
 												<div class="project-box__img">
-													<?php the_post_thumbnail('full'); ?>
+													<?php the_post_thumbnail('my-project-customize-size'); ?>
 												</div>
-												
+
 												<ul class="project-box__content">
 													<li class="content__item project-box__tax">Platform:</li>
-													<li class="content__item project-box__tax"><?php the_field('platform_type'); ?></li>      
-												</ul>     
+													<li class="content__item project-box__tax"><?php the_field('platform_type'); ?></li>
+												</ul>
 											</div>
 										</a>
 									</div>

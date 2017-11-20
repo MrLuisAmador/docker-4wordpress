@@ -171,3 +171,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// Adding custom sized feature images to the My Project Post Type
+add_image_size( 'my-project-customize-size', 800, 389, true );
