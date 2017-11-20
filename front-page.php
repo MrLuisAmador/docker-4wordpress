@@ -53,7 +53,7 @@ get_header(); ?>
 
 			<!-- Projects Section | This is a Custom Field for HomePage -->
 			<section id="projects" class="projects scrollto">
-					<?php $query = new WP_query(array('post_type' => 'my_projects')); ?>
+					<?php $query = new WP_query(array('post_type' => 'my_projects', 'posts_per_page' => -1)); ?>
 					<div class="projects__title-title-wrap">
 						<h2 class="projects__title">Projects</h2>
 
