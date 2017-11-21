@@ -1,5 +1,5 @@
 {
-  "name": "development-template",
+  "name": "wp4docker",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,12 +8,12 @@
     "savedb": "docker exec database sh -c 'exec mysqldump --all-databases -uroot -p\"$MYSQL_ROOT_PASSWORD\"' > ./initdb/data.sql",
     "wp": "docker run -it --rm --volumes-from wordpress --network container:wordpress wordpress:cli"
   },
-  "author": "Ken Newman",
+  "author": "Luis Amador",
   "license": "UNLICENSED",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/ashworthcreative/development-template.git"
+    "url": "git@github.com:MrLuisAmador/wp4docker.git"
   },
   "browserslist": [
     "> .5%",

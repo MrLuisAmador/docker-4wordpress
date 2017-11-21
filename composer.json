@@ -1,5 +1,5 @@
 {
-    "name": "ashworthcreative/development-template",
+    "name": "mrluisamador/wp4docker",
     "type": "project",
     "require-dev": {
         "wp-coding-standards/wpcs": "*",
@@ -8,12 +8,8 @@
     },
     "authors": [
         {
-            "name": "Ken Newman",
-            "email": "ken@ashworthcreative.com"
-        },
-        {
             "name": "Luis Amador",
-            "email": "luis@ashworthcreative.com"
+            "email": "mrluisamador@gmail.com"
         }
     ]
 }
