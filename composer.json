@@ -1,15 +1,15 @@
 {
     "name": "mrluisamador/wp4docker",
     "type": "project",
-    "require-dev": {
-        "wp-coding-standards/wpcs": "*",
-        "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "wimg/php-compatibility": "*"
-    },
     "authors": [
         {
             "name": "Luis Amador",
             "email": "mrluisamador@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "wp-coding-standards/wpcs": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "wimg/php-compatibility": "*"
+    }
 }
