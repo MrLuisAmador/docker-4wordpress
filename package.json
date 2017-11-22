@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "This is intended to be used as an aid to a new WordPress project",
   "scripts": {
-    "start": "rimraf assets && webpack --watch",
+    "start": "rimraf lu-theme/assets && webpack --watch",
     "build": "webpack -p",
     "savedb": "docker exec database sh -c 'exec mysqldump --all-databases -uroot -p\"$MYSQL_ROOT_PASSWORD\"' > ./initdb/data.sql",
     "wp": "docker run -it --rm --volumes-from wordpress --network container:wordpress wordpress:cli"

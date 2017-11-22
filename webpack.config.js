@@ -7,12 +7,12 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-  entry: './src/js/main.js',
+  entry: './lu-theme/src/js/main.js',
 
   output: {
-    path: path.resolve(__dirname, 'assets'),
+    path: path.resolve(__dirname, 'lu-theme/assets'),
     filename: './js/bundle.js',
-    publicPath: 'assets'
+    publicPath: 'lu-theme/assets'
   },
 
   devtool: "inline-source-map",
