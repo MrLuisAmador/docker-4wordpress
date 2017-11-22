@@ -1,14 +1,14 @@
-# Default Development Template
+# WP4Docker
 
-## PHP
+## VSCode
 
-The template is configured with settings for VSCode to use recommended plugins for PHP development, including linting for the WordPress Style Guide.
+This project is configured with settings for VSCode to use recommended plugins for PHP development, including linting for the WordPress Style Guide.
 
 ## Development Server
 
-A Docker environment is included. Use `docker-compose up` to run, etc. and use `npm run savedb` to get a backup of the database for commit.
+A Docker environment is included. The idea was to be able to just git clone the repo and get right to developing. It was also intended to be able to easily share the project amongst developers and save environment setup time.
 
-You can modify `docker-compose.yml` to mount different volumes, but be aware, this may effect your build script, deploy/ftp settings, and limit WP-CLI (see below).
+Use `docker-compose up` to run, etc. and use `npm run savedb` to get a backup of the database. For security reason the database isn't committed. This will have to be shared manually.
 
 ### WP-CLI
 
