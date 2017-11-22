@@ -1,60 +1,48 @@
 {
-  "name": "development-template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "wp4docker",
+  "version": "1.0.2",
+  "description": "This is intended to be used as an aid to a new WordPress project",
   "scripts": {
-    "start": "webpack",
+    "start": "rimraf lu-theme/assets && webpack --watch",
     "build": "webpack -p",
     "savedb": "docker exec database sh -c 'exec mysqldump --all-databases -uroot -p\"$MYSQL_ROOT_PASSWORD\"' > ./initdb/data.sql",
     "wp": "docker run -it --rm --volumes-from wordpress --network container:wordpress wordpress:cli"
   },
-  "author": "Ken Newman",
-  "license": "UNLICENSED",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/ashworthcreative/development-template.git"
+    "url": "https://github.com/MrLuisAmador/wp4docker"
   },
-  "browserslist": [
-    "> .5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "IE 9"
+  "keywords": [
+    "webpack",
+    "frontend",
+    "WordPress",
+    "Starter Kit"
   ],
-  "babel": {
-    "presets": [
-      "@babel/react",
-      [
-        "@babel/env",
-        {
-          "loose": true,
-          "modules": false,
-          "debug": true,
-          "useBuiltIns": "usage"
-        }
-      ]
-    ],
-    "plugins": []
+  "author": "Luis Amador",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrLuisAmador/wp4docker/issues"
   },
-  "engines": {
-    "node": ">=8.*"
-  },
+  "homepage": "https://github.com/MrLuisAmador/wp4docker/blob/develop/README.md",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.31",
-    "@babel/preset-env": "^7.0.0-beta.31",
-    "@babel/preset-flow": "^7.0.0-beta.31",
-    "@babel/preset-react": "^7.0.0-beta.31",
-    "@babel/preset-typescript": "^7.0.0-beta.31",
-    "babel-loader": "^8.0.0-beta.0",
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.5",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.8",
-    "style-loader": "^0.19.0",
-    "typescript": "^2.6.1",
-    "webpack": "^3.8.1",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.1",
+    "susy": "^3.0.1",
+    "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.4"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.0.0-beta.31"
   }
 }

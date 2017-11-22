@@ -2,3 +2,5 @@
 /node_modules
 /html
 /theme/assets
+/initdb/data.sql
+/lu-theme/assets

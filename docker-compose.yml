@@ -11,10 +11,11 @@ services:
       - database
     environment:
       WORDPRESS_DB_HOST: database:3306
-      WORDPRESS_DB_PASSWORD: zxcvbn
+      WORDPRESS_DB_PASSWORD: admin
       WORDPRESS_DEBUG: 1
     volumes:
       - ./html/:/var/www/html/
+      - ./lu-theme/:/var/www/html/wp-content/themes/lu-theme
     networks:
       - network
   database:
@@ -27,7 +28,7 @@ services:
       - ./initdb:/docker-entrypoint-initdb.d
       - data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: zxcvbn
+      MYSQL_ROOT_PASSWORD: admin
     networks:
       - network
   phpmyadmin:
@@ -40,7 +41,7 @@ services:
       - 8080:80
     environment:
       PMA_HOST: database
-      MYSQL_ROOT_PASSWORD: zxcvbn
+      MYSQL_ROOT_PASSWORD: admin
     networks:
       - network
 networks:
