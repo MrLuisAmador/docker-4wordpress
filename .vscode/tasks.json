@@ -1,0 +1,57 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "group": "build",
+            "label": "Beautify/Fix PHP",
+            "type": "shell",
+            "command": "./vendor/bin/phpcbf ${file} --standard=WordPress"
+        },
+        {
+            "group": "build",
+            "label": "Compile current less",
+            "type": "shell",
+            "command": "lessc",
+            "args": [
+                "${file}",
+                "${fileDirname}/${fileBasenameNoExtension}.css",
+                "--no-ie-compat", // Larger files for inlining data-uri
+                "--source-map-less-inline",
+                "--source-map-map-inline",
+                "--autoprefix=\"> 0.5%, last 2 versions, Firefox ESR, ie > 8\""
+            ],
+            "problemMatcher": [
+                "$lessCompile"
+            ]
+        },
+        {
+            "group": "build",
+            "label": "Compile & minify current less",
+            "type": "shell",
+            "command": "lessc",
+            "args": [
+                "${file}",
+                "${fileDirname}/${fileBasenameNoExtension}.min.css",
+                "--no-ie-compat", // Larger files for inlining data-uri
+                "--clean-css", // Minifier
+                "--autoprefix=\"> 0.5%, last 2 versions, Firefox ESR, ie > 8\""
+            ],
+            "problemMatcher": [
+                "$lessCompile"
+            ]
+        },
+        {
+            "group": "build",
+            "label": "Uglify JS",
+            "type": "shell",
+            "command": "uglifyjs",
+            "args": [
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.min.js",
+                "${file}"
+            ]
+        }
+    ]
+}
