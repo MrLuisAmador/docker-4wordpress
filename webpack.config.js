@@ -17,6 +17,14 @@ module.exports = {
 
   devtool: "inline-source-map",
 
+  // A hack for Isotope
+  resolve: {
+    alias: {
+      'masonry': 'masonry-layout',
+      'isotope': 'isotope-layout'
+    }
+  },
+
   // devServer: {
   //     contentBase: path.join(__dirname),
   //     compress: true,

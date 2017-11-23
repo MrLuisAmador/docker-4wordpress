@@ -44,5 +44,8 @@
     "susy": "^3.0.1",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.6"
   }
 }

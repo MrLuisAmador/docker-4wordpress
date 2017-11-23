@@ -1,6 +1,12 @@
-// require('normalize.css');
-require('../css/main.scss'); 
-// var Typed = require('Typed');
+// Load in your theme's Sass:
+import '../css/main.scss';
+
+// Load in your theme's images:
+import '../img/mugshot.png';
+
+// Load in your theme's JS libraries:
+import Typed from 'typed.js';
+
 
 jQuery(function($) {
 // Make Row Equal Height
@@ -57,42 +63,6 @@ jQuery(function($) {
 
   });
 
-  // Slick Slider for Skill Boxes
-  // $('.skills-wrapper').slick({
-  //
-  //  infinite: true,
-  //  speed: 300,
-  //  slidesToShow: 4,
-  //  slidesToScroll: 4,
-  //  arrows: false,
-  // //  variableWidth: true,
-  //  responsive: [
-  //    {
-  //      breakpoint: 1024,
-  //      settings: {
-  //        slidesToShow: 3,
-  //        slidesToScroll: 3,
-  //        infinite: true,
-  //        dots: true
-  //      }
-  //    },
-  //    {
-  //      breakpoint: 600,
-  //      settings: {
-  //        slidesToShow: 2,
-  //        slidesToScroll: 2
-  //      }
-  //    },
-  //    {
-  //      breakpoint: 480,
-  //      settings: {
-  //        slidesToShow: 1,
-  //        slidesToScroll: 1
-  //      }
-  //    }
-  //  ]
-  // });
-  
   var typed = new Typed('.typejs', {
     strings: ["making the web great again."],
     typeSpeed: 60
@@ -110,7 +80,5 @@ jQuery(function($) {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
-  
-
 
 });
