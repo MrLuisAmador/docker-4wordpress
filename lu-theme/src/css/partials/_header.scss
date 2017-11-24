@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 The header styling
 --------------------------------------------------------------*/
-header {
+.site-header {
   position: relative; }
 
 .site-header__center {
@@ -113,13 +113,13 @@ header {
   background-color: #2F0C0C;
   color: #fff !important; }
 
-header {
+.site-header {
   height: 100vh;
   width: 100%;
   min-height: 380px;
   color: #fff;
   text-align: center;
-  background-color: #cf4646; 
+  background-color: #cf4646;
   display: flex;
   justify-content: center;
   align-items: center;

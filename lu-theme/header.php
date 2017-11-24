@@ -30,7 +30,7 @@
 	<div class="hidden-nav-wrapper">
 		<div class="site-branding">
 			<div class="hidden-mugshot">
-				<img src="<?php echo get_template_directory_uri() . "/assets/img/mugshot.png"?>" alt="" />
+				<img src="/wp-content/themes/lu-theme/assets/img/mugshot.png" alt="" />
 			</div>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -43,21 +43,29 @@
 		</nav><!-- #site-navigation -->
 	</div>
 
-	<header id="masthead" class="site-header scrollto" role="banner">		
-		<div class="site-header__center">
-			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
+	<header id="masthead" class="site-header scrollto" role="banner">
+		<?php if ( is_front_page() ) : ?>
+			<div class="site-header__center">
+				<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
 
-			<h2 class="header-subtitle"><?php bloginfo( 'description' ); ?> <span class="typejs"></span></span></h2>
+				<h2 class="header-subtitle"><?php bloginfo( 'description' ); ?> <span class="typejs"></span></span></h2>
 
-			<div class="mugshot-wrap">
-				<img src="<?php echo get_template_directory_uri() . "/assets/img/mugshot.png"?>" alt="" />
+				<div class="mugshot-wrap">
+					<img src="/wp-content/themes/lu-theme/assets/img/mugshot.png" alt="" />
+				</div>
+
+				<a class="header-cta" href="#contact-me">Let's Talk!</a>
 			</div>
+		<?php endif; ?>
 
-			<a class="header-cta" href="#contact-me">Let's Talk!</a>
-		</div>
-		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'container' => false,
+			) );
+
+			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

@@ -5,24 +5,24 @@
  * @package la
  */
 
-get_header('blog'); ?>
+get_header( 'blog' ); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-			
+
 				<h1 class="page-title">
-					<?php esc_html_e( 'Oops! You seem lost.', 'la' ); ?>	
+					<?php esc_html_e( 'Oops! You seem lost.', 'la' ); ?>
 				</h1>
-				
-				<h2 class="page-subtitle">No worries, just click to go back to the <a href="<?php echo get_home_url(); ?>">homepage</a> or take a look at the links below.</h2>
+
+				<h2 class="page-subtitle">No worries, just click to go back to the <a href="<?php echo esc_html( get_home_url() ); ?>">homepage</a> or take a look at the links below.</h2>
 
 				<div class="page-content">
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( la_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<?php if ( false ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'la' ); ?></h2>
 						<ul>
