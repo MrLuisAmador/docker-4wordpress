@@ -1,6 +1,5 @@
 @import "normalize.css"; /* This is being included from the node_modules folder */
-@import  '_susy-settings.scss';
-@import 'partials/_variables';
+@import '_settings';
 @import 'partials/_base';
 @import 'partials/_fonts';
 @import 'partials/_header';

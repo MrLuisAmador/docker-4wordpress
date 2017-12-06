@@ -4,7 +4,7 @@
 *
 */
 
-import main from '../css/main.scss';
+import main from '../css/main.css';
 import img from '../img/example.png';
 
 
