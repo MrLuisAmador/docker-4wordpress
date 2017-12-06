@@ -1,6 +1,6 @@
 {
-  "name": "wp4docker",
-  "version": "1.0.2",
+  "name": "docker-webpack4wp",
+  "version": "1.0.3",
   "description": "This is intended to be used as an aid to a new WordPress project",
   "scripts": {
     "start": "rimraf lu-theme/assets && webpack --watch",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrLuisAmador/wp4docker"
+    "url": "https://github.com/MrLuisAmador/docker-webpack4wp"
   },
   "keywords": [
     "webpack",
@@ -21,27 +21,27 @@
   "author": "Luis Amador",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrLuisAmador/wp4docker/issues"
+    "url": "https://github.com/MrLuisAmador/docker-webpack4wp/issues"
   },
-  "homepage": "https://github.com/MrLuisAmador/wp4docker/blob/develop/README.md",
+  "homepage": "https://github.com/MrLuisAmador/docker-webpack4wp/blob/develop/README.md",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.5",
-    "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.8",
+    "postcss-nesting": "^4.2.1",
     "rimraf": "^2.6.2",
-    "sass-loader": "^6.0.6",
     "style-loader": "^0.18.1",
-    "susy": "^3.0.1",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.4"
   }
