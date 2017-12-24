@@ -4,5 +4,6 @@
 *
 */
 
-import '../css/main.css';
-import '../img/example.png';
+import "../css/main.css";
+
+import "../img/example.png";
