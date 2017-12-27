@@ -1,45 +1,58 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const path = require("path");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 const extractPostCss = new ExtractTextPlugin({
-  filename: 'css/main.css',
-  disable: process.env.NODE_ENV === 'development',
+  filename: "css/main.css",
+  disable: process.env.NODE_ENV === "development"
 });
 
 module.exports = {
-  entry: './lu-theme/src/js/main.js',
-
+  context: __dirname,
+  entry: "./lu-theme/src/js/main.js",
+  devtool: "inline-source-map",
   output: {
-    path: path.resolve(__dirname, 'lu-theme/assets'),
-    filename: './js/bundle.js',
-    publicPath: 'lu-theme/assets',
+    path: path.resolve(__dirname, "lu-theme/assets"),
+    filename: "./js/bundle.js",
+    publicPath: "lu-theme/assets"
   },
-
-  devtool: 'inline-source-map',
-
+  resolve: {
+    extensions: [".js", ".jsx", ".json"]
+  },
+  stats: {
+    colors: true,
+    reasons: true,
+    chunks: true
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        enforce: "pre",
+        test: /\.jsx?$/,
+        loader: "eslint-loader",
+        exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['env'],
-          },
-        },
+            presets: ["env"]
+          }
+        }
       },
-
       {
         test: /\.(png|jpg|gif|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'img/',
-          },
-        }],
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "img/"
+            }
+          }
+        ]
       },
 
       {
@@ -47,21 +60,22 @@ module.exports = {
         use: extractPostCss.extract({
           use: [
             {
-              loader: 'css-loader', options: { sourceMap: true }
+              loader: "css-loader",
+              options: { sourceMap: true }
             },
 
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
-                sourceMap: true,
-              },
-            },
+                sourceMap: true
+              }
+            }
           ],
           // use style-loader in development
-          fallback: 'style-loader',
-        }),
-      },
-    ],
+          fallback: "style-loader"
+        })
+      }
+    ]
   },
 
   plugins: [
@@ -69,9 +83,9 @@ module.exports = {
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served
-      host: 'localhost',
+      host: "localhost",
       port: 3000,
-      proxy: 'http://localhost/',
-    }),
-  ],
+      proxy: "http://localhost/"
+    })
+  ]
 };
