@@ -4,20 +4,6 @@
 *
 */
 
-import main from '../css/main.css';
-import img from '../img/example.png';
+import "../css/main.css";
 
-
-
-var x = ()=> {
-    console.log('Evan')
-}
-
-x();
-
-
-class MyClass { }
-
-function annotation(target) {
-   target.annotated = true;
-}
+import "../img/example.png";

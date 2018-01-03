@@ -4,6 +4,9 @@
         "felixfbecker.php-intellisense",
         "tungvn.wordpress-snippet",
         "mhmadhamster.postcss-language",
-        "anthonydiametrix.acf-snippet"
+        "anthonydiametrix.acf-snippet",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.editorconfig",
+        "esbenp.prettier-vscode"
     ]
 }
