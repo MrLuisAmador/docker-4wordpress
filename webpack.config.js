@@ -2,7 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
-const extractPostCss = new ExtractTextPlugin({
+const extractSass = new ExtractTextPlugin({
   filename: "css/main.css",
   disable: process.env.NODE_ENV === "development"
 });
@@ -56,8 +56,8 @@ module.exports = {
       },
 
       {
-        test: /\.css$/,
-        use: extractPostCss.extract({
+        test: /\.scss$/,
+        use: extractSass.extract({
           use: [
             {
               loader: "css-loader",
@@ -66,6 +66,13 @@ module.exports = {
 
             {
               loader: "postcss-loader",
+              options: {
+                sourceMap: true
+              }
+            },
+
+            {
+              loader: "sass-loader",
               options: {
                 sourceMap: true
               }
@@ -79,7 +86,7 @@ module.exports = {
   },
 
   plugins: [
-    extractPostCss,
+    extractSass,
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served

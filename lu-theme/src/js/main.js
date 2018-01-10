@@ -4,6 +4,6 @@
 *
 */
 
-import "../css/main.css";
+import "../css/main.scss";
 
 import "../img/example.png";
