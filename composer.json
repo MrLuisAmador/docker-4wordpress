@@ -1,15 +1,24 @@
 {
     "name": "mrluisamador/wp4docker",
-    "type": "project",
+    "type": "wordpress-theme",
     "authors": [
         {
             "name": "Luis Amador",
             "email": "mrluisamador@gmail.com"
         }
     ],
+    "require": {
+        "composer/installers": "^1.5",
+        "ashworthcreative/ashworth-theme": "dev-master"
+    },
     "require-dev": {
         "wp-coding-standards/wpcs": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
         "wimg/php-compatibility": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "lu-theme/{$name}/": ["ashworthcreative/ashworth-theme"]
+        }
     }
 }
