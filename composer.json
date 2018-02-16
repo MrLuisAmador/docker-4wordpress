@@ -8,7 +8,6 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.5",
         "ashworthcreative/ashworth-theme": "dev-master"
     },
     "require-dev": {
