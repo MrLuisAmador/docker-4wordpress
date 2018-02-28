@@ -1,10 +1,6 @@
-@import '_settings';
+@import "_settings";
 @import "~bootstrap/scss/bootstrap";
-@import 'partials/_base';
-@import 'partials/_fonts';
-@import 'partials/_header';
-@import 'partials/_footer';
-
-body {
-    background-color: #fff;
-}
+@import "partials/_base";
+@import "partials/_fonts";
+@import "partials/_header";
+@import "partials/_footer";
