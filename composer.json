@@ -1,6 +1,6 @@
 {
-    "name": "mrluisamador/wp4docker",
-    "type": "wordpress-theme",
+    "name": "mrluisamador/docker-webpack4wp",
+    "type": "project",
     "authors": [
         {
             "name": "Luis Amador",
@@ -17,7 +17,7 @@
     },
     "extra": {
         "installer-paths": {
-            "lu-theme/{$name}/": ["ashworthcreative/ashworth-theme"]
+            "{$name}/": ["ashworthcreative/ashworth-theme"]
         }
     }
 }
