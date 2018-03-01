@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AshworthCreative/ashworth-theme.git",
-                "reference": "9419bbed3e74792b65c2d70eb6c8631c3b442c42"
+                "reference": "edc1c7a67eda751a1093f736d8585340c4968283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AshworthCreative/ashworth-theme/zipball/9419bbed3e74792b65c2d70eb6c8631c3b442c42",
-                "reference": "9419bbed3e74792b65c2d70eb6c8631c3b442c42",
+                "url": "https://api.github.com/repos/AshworthCreative/ashworth-theme/zipball/edc1c7a67eda751a1093f736d8585340c4968283",
+                "reference": "edc1c7a67eda751a1093f736d8585340c4968283",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "A starter theme for the Ashworth Creative Development team",
-            "time": "2018-03-01T03:10:17+00:00"
+            "time": "2018-03-01T03:39:27+00:00"
         },
         {
             "name": "composer/installers",

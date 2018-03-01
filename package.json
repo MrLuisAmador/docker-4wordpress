@@ -24,7 +24,11 @@
     "url": "https://github.com/MrLuisAmador/docker-webpack4wp/issues"
   },
   "homepage": "https://github.com/MrLuisAmador/docker-webpack4wp/blob/develop/README.md",
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
   "devDependencies": {
+    "@wordpress/browserslist-config": "^2.1.2",
     "ajv": "^6.1.1",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
@@ -37,6 +41,7 @@
     "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-config-wordpress": "^2.0.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
