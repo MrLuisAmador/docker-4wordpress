@@ -21,6 +21,7 @@ jQuery(function($) {
       .addClass("skills-hover-content");
   });
 
+
   $(".skills-inner-wrap").on("mouseleave", function() {
     $(this)
       .find(".skills-title")

@@ -1,5 +1,1 @@
 # Luis Amador Portfolio Website
-
-
-
-
