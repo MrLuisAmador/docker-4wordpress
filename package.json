@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "This is intended to be used as an aid to a new WordPress project",
   "scripts": {
-    "start": "rimraf lu-theme/assets && webpack --watch",
+    "start": "rimraf ashworth-theme/assets && webpack --watch",
     "build": "webpack -p",
     "savedb": "docker exec database sh -c 'exec mysqldump --all-databases -uroot -p\"$MYSQL_ROOT_PASSWORD\"' > ./initdb/data.sql",
     "wp": "docker run -it --rm --volumes-from wordpress --network container:wordpress wordpress:cli"
@@ -24,7 +24,15 @@
     "url": "https://github.com/MrLuisAmador/docker-webpack4wp/issues"
   },
   "homepage": "https://github.com/MrLuisAmador/docker-webpack4wp/blob/develop/README.md",
+<<<<<<< HEAD
+=======
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+>>>>>>> master
   "devDependencies": {
+    "@wordpress/browserslist-config": "^2.1.2",
+    "ajv": "^6.1.1",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -36,6 +44,10 @@
     "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
+<<<<<<< HEAD
+=======
+    "eslint-config-wordpress": "^2.0.0",
+>>>>>>> master
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
@@ -44,11 +56,15 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.5",
     "node-sass": "^4.7.2",
+<<<<<<< HEAD
     "normalize.css": "^7.0.0",
+=======
+>>>>>>> master
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.8",
     "postcss-nesting": "^4.2.1",
+<<<<<<< HEAD
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.1",
@@ -56,4 +72,23 @@
     "webpack-dev-server": "^2.9.6"
   },
   "dependencies": {}
+=======
+    "prettier": "^1.10.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.1",
+    "stylelint": "^9.1.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-wordpress": "^12.0.0",
+    "stylelint-csstree-validator": "^1.2.2",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.9.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "typed.js": "^2.0.6"
+  }
+>>>>>>> master
 }

@@ -1,6 +1,10 @@
 {
     "extends": [
         "airbnb",
+<<<<<<< HEAD
+=======
+        // "wordpress",
+>>>>>>> master
         "prettier",
         "prettier/react"
     ],
@@ -16,7 +20,11 @@
     },
     "env": {
         "es6": true,
+<<<<<<< HEAD
         "browser": true,
         "node": true
+=======
+        "browser": true
+>>>>>>> master
     }
 }
