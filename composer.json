@@ -8,7 +8,9 @@
         }
     ],
     "require": {
-        "ashworthcreative/ashworth-theme": "dev-master"
+        "ashworthcreative/ashworth-theme": "dev-master",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/custom-post-type-ui": "*"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "*",
