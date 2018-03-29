@@ -1,28 +1,25 @@
 // Load in your theme's JS libraries:
-import Typed from "typed.js";
+import Typed from 'typed.js';
 
 // Load in your theme's Sass:
-import "../css/main.scss";
+import '../css/main.scss';
 
 // Load in your theme's images:
-import "../img/mugshot.png";
+import '../img/mugshot.png';
 
-jQuery(function($) {
-  // Make Row Equal Height
+jQuery( function( $ ) {
 
-  //  Add background to skills boxes
-
-  $(".skills-inner-wrap").on("mouseenter", function() {
-    $(this)
-      .find(".skills-title")
-      .addClass("skills-hover-title");
-    $(this)
-      .find(".skills-content")
+  // Add background to skills boxes.
+  $( '.skills-inner-wrap' ).on( 'mouseenter', function() {
+    $( this )
+      .find( '.skills-title' )
+      .addClass( 'skills-hover-title' );
+    $ ( this )
+      .find( '.skills-content' )
       .addClass("skills-hover-content");
   });
 
-
-  $(".skills-inner-wrap").on("mouseleave", function() {
+  $(".skills-inner-wrap").on("mouseleave", function () {
     $(this)
       .find(".skills-title")
       .removeClass("skills-hover-title");
@@ -32,10 +29,10 @@ jQuery(function($) {
   });
 
   // Main Menu Scroll Effect -- I don't think I need both this code and the stickyNavbar library but oh well
-  $('a[href*="#"]:not([href="#"])').click(function() {
+  $('a[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -72,7 +69,7 @@ jQuery(function($) {
     unstickyModeClass: "unsticky" // Class that will be applied to 'this' in non-sticky mode
   });
 
-  $(".menu-toggle").on("click", function() {
+  $(".menu-toggle").on("click", function () {
     $("#menu-hidden-nav").toggle();
   });
 
@@ -89,7 +86,7 @@ jQuery(function($) {
 
   $grid.isotope({ filter: "*" });
 
-  $(".filter-btn").on("click", "button", function() {
+  $(".filter-btn").on("click", "button", function () {
     var filterValue = $(this).attr("data-filter");
     $grid.isotope({ filter: filterValue });
   });

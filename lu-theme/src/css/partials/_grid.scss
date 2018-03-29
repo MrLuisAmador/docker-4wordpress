@@ -2,8 +2,8 @@
 Grid Styling
 --------------------------------------------------------------*/
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ Grid Styling
 	margin-right: auto;
 }
 
-.container:after {
+.container::after {
 	content: " ";
 	display: block;
 	clear: both;

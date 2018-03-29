@@ -1,23 +1,23 @@
-const path = require("path");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const path = require( 'path' );
+const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
 
 const extractSass = new ExtractTextPlugin({
-  filename: "css/main.css",
-  disable: process.env.NODE_ENV === "development"
+  filename: 'css/main.css',
+  disable: 'development' === process.env.NODE_ENV
 });
 
 module.exports = {
   context: __dirname,
-  entry: "./lu-theme/src/js/main.js",
-  devtool: "inline-source-map",
+  entry: './lu-theme/src/js/main.js',
+  devtool: 'inline-source-map',
   output: {
-    path: path.resolve(__dirname, "lu-theme/assets"),
-    filename: "./js/bundle.js",
-    publicPath: "lu-theme/assets"
+    path: path.resolve( __dirname, 'lu-theme/assets' ),
+    filename: './js/bundle.js',
+    publicPath: 'lu-theme/assets'
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json"]
+    extensions: [ '.js', '.jsx', '.json' ]
   },
   stats: {
     colors: true,
@@ -27,18 +27,18 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.jsx?$/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /(node_modules|bower_components)/
       },
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["env"]
+            presets: [ 'env' ]
           }
         }
       },
@@ -46,10 +46,10 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              name: "[name].[ext]",
-              outputPath: "img/"
+              name: '[name].[ext]',
+              outputPath: 'img/'
             }
           }
         ]
@@ -60,26 +60,25 @@ module.exports = {
         use: extractSass.extract({
           use: [
             {
-              loader: "css-loader",
+              loader: 'css-loader',
               options: { sourceMap: true }
             },
 
             {
-              loader: "postcss-loader",
+              loader: 'postcss-loader',
               options: {
                 sourceMap: true
               }
             },
 
             {
-              loader: "sass-loader",
+              loader: 'sass-loader',
               options: {
                 sourceMap: true
               }
             }
           ],
-          // use style-loader in development
-          fallback: "style-loader"
+          fallback: 'style-loader'
         })
       }
     ]
@@ -88,11 +87,9 @@ module.exports = {
   plugins: [
     extractSass,
     new BrowserSyncPlugin({
-      // browse to http://localhost:3000/ during development,
-      // ./public directory is being served
-      host: "localhost",
+      host: 'localhost',
       port: 3000,
-      proxy: "http://localhost/"
+      proxy: 'http://localhost/'
     })
   ]
 };

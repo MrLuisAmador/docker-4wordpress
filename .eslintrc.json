@@ -1,15 +1,9 @@
 {
     "extends": [
-        "airbnb",
-<<<<<<< HEAD
-=======
-        // "wordpress",
->>>>>>> master
-        "prettier",
-        "prettier/react"
+        "wordpress"
     ],
     "plugins": [
-        "prettier"
+
     ],
     "parserOptions": {
         "ecmaVersion" : 2016,
@@ -20,11 +14,6 @@
     },
     "env": {
         "es6": true,
-<<<<<<< HEAD
-        "browser": true,
-        "node": true
-=======
         "browser": true
->>>>>>> master
     }
 }
