@@ -9,12 +9,12 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   context: __dirname,
-  entry: './lu-theme/src/js/main.js',
+  entry: './mrluisamador/src/js/main.js',
   devtool: 'inline-source-map',
   output: {
-    path: path.resolve( __dirname, 'lu-theme/assets' ),
+    path: path.resolve( __dirname, 'mrluisamador/assets' ),
     filename: './js/bundle.js',
-    publicPath: 'lu-theme/assets'
+    publicPath: 'mrluisamador/assets'
   },
   resolve: {
     extensions: [ '.js', '.jsx', '.json' ]

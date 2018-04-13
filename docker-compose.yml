@@ -15,7 +15,7 @@ services:
       WORDPRESS_DEBUG: 1
     volumes:
       - ./html/:/var/www/html/
-      - ./lu-theme/:/var/www/html/wp-content/themes/lu-theme
+      - ./mrluisamador/:/var/www/html/wp-content/themes/mrluisamador
     networks:
       - network
   database:
