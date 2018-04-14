@@ -30,7 +30,7 @@
 	<div class="hidden-nav-wrapper">
 		<div class="site-branding">
 			<div class="hidden-mugshot">
-				<img src="/wp-content/themes/lu-theme/assets/img/mugshot.png" alt="" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mugshot.png" alt="" />
 			</div>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -51,7 +51,7 @@
 				<h2 class="header-subtitle"><?php bloginfo( 'description' ); ?> <span class="typejs"></span></span></h2>
 
 				<div class="mugshot-wrap">
-					<img src="/wp-content/themes/lu-theme/assets/img/mugshot.png" alt="" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mugshot.png" alt="" />
 				</div>
 
 				<a class="header-cta" href="#contact-me">Let's Talk!</a>
