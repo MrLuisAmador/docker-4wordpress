@@ -48,7 +48,7 @@
 			<div class="site-header__center">
 				<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
 
-				<h2 class="header-subtitle"><?php bloginfo( 'description' ); ?> <span class="typejs"></span></span></h2>
+				<h2 class="header-subtitle"><span class="typejs"></span></span></h2>
 
 				<div class="mugshot-wrap">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mugshot.png" alt="" />

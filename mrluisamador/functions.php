@@ -139,6 +139,13 @@ function la_scripts() {
 
 	wp_enqueue_script( 'la-slick-js', 'https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array( 'jquery' ), '20120206', true );
 
+	$data = array(
+		'siteDescripton' => get_bloginfo( 'description' ),
+	);
+
+	wp_localize_script( 'la-main-js', 'WP', $data );
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

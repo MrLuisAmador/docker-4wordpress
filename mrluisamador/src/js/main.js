@@ -50,7 +50,7 @@ jQuery( function( $ ) {
   });
 
   // Hidden Nav
-  $(".hidden-nav-wrapper").stickyNavbar({
+  $( '.hidden-nav-wrapper' ).stickyNavbar({
     activeClass: "active", // Class to be added to highlight nav elements
     sectionSelector: "scrollto", // Class of the section that is interconnected with nav links
     animDuration: 250, // Duration of jQuery animation
@@ -74,7 +74,7 @@ jQuery( function( $ ) {
   });
 
   var typed = new Typed(".typejs", {
-    strings: ["making the web great again."],
+    strings: [ WP.siteDescripton ],
     typeSpeed: 60
   });
 
