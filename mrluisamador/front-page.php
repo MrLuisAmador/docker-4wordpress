@@ -12,6 +12,32 @@
 
 get_header(); ?>
 
+<section id="masthead" class="site-header scrollto" role="banner">
+	<?php if ( is_front_page() ) : ?>
+		<div class="site-header__center">
+			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
+
+			<h2 class="header-subtitle"><span class="typejs"></span></span></h2>
+
+			<div class="mugshot-wrap">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mugshot.png" alt="" />
+			</div>
+
+			<a class="header-cta" href="#contact-me">Let's Talk!</a>
+		</div>
+	<?php endif; ?>
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<?php
+		wp_nav_menu( array(
+			'theme_location' => 'primary',
+			'container' => false,
+		) );
+
+		?>
+	</nav><!-- #site-navigation -->
+</section><!-- #masthead -->
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 

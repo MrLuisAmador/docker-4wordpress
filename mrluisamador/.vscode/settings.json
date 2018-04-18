@@ -1,0 +1,5 @@
+{
+	"phpcs.enable": true,
+	"phpcs.standard": "WordPress",
+	"phpcs.executablePath": "../vendor/bin/phpcs",
+}

@@ -1,12 +1,6 @@
 {
-    "phpcs.standard": "WordPress",
-    "phpcs.enable": true,
-    "phpcs.ignore": "html/",
-    "php.suggest.basic": false,
-    // Set the default
-    "editor.formatOnSave": false,
-    // Enable per-language
-    "[javascript]": {
-        "editor.formatOnSave": false
-    }
+    "phpcs.enable": false,
+    "phpcs.ignorePatterns": [
+        "html/"
+    ]
 }

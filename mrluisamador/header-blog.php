@@ -26,7 +26,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<div class="blog-nav-wrapper"> 
+	<div class="blog-nav-wrapper">
 		<div class="site-branding">
 			<div class="hidden-mugshot">
 				<img src="<?php echo get_template_directory_uri() . "/assets/img/mugshot.png"?>" alt="" />
@@ -35,5 +35,5 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 	</div>
-	
+
 	<div id="content" class="site-content">
