@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <section id="masthead" class="site-header scrollto" role="banner">
-	<?php if ( is_front_page() ) : ?>
+	<!--<?php if ( is_front_page() ) : ?>
 		<div class="site-header__center">
 			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
 
@@ -25,7 +25,29 @@ get_header(); ?>
 
 			<a class="header-cta" href="#contact-me">Let's Talk!</a>
 		</div>
-	<?php endif; ?>
+	<?php endif; ?>-->
+
+
+	<!-- new hero section -->
+	<div class="hero-wrapper">
+		<div class="hero-wp-block">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/feature-laptop.svg" alt="">
+		</div>
+
+		<div class="hero-magento-block">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/feature-mg-laptop.svg" alt="">
+		</div>
+
+		<div class="site-header__center">
+			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
+
+			<h2 class="header-subtitle"><span class="typejs"></span></span></h2>
+
+			<a class="header-cta" href="#contact-me">Let's Talk!</a>
+		</div>
+	</div>
+
+
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<?php

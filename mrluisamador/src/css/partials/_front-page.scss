@@ -1,0 +1,85 @@
+.site-header {
+	height: 100vh;
+	width: 100%;
+	min-height: 380px;
+	color: #fff;
+	// text-align: center;
+	background-color: #cf4646;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	position: relative;
+	padding: 0;
+}
+
+.site-header__center {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	color: #313131;
+}
+
+.hero-wrapper {
+	display: flex;
+}
+
+.hero-wp-block {
+	background-color: $wp-light-blue;
+	display: inline-block;
+	flex-basis: 50%;
+	height: 100vh;
+
+	img {
+		width: 100%
+	}
+}
+
+.hero-magento-block {
+	background-color: $mg-light-orange;
+	background-image: url(/wp-content/themes/mrluisamador/assets/img/bck-quote-alt.png);
+	display: inline-block;
+	flex-basis: 50%;
+	height: 100vh;
+
+	img {
+		width: 100%
+	}
+}
+
+#menu-main-nav {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.6);
+	// background-color: #3b3b3b;
+}
+
+#menu-main-nav:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#menu-main-nav li {
+	width: 20%;
+	float: left;
+	padding-left: 0.66667%;
+	padding-right: 0.66667%;
+	display: inline-block;
+	text-align: center;
+}
+
+#menu-main-nav a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 2em 0;
+	transition-duration: 0.3s;
+}
+
+#menu-main-nav a:hover {
+	background-color: #2f0c0c;
+	background-color: #3b3b3b;
+}

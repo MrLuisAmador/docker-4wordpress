@@ -1,13 +1,7 @@
 /*--------------------------------------------------------------
 The header styling
 --------------------------------------------------------------*/
-.site-header {
-	position: relative;
-}
 
-.site-header__center {
-	width: 100%;
-}
 
 .hidden-nav-wrapper {
 	display: none;
@@ -153,17 +147,6 @@ The header styling
 	color: #fff !important;
 }
 
-.site-header {
-	height: 100vh;
-	width: 100%;
-	min-height: 380px;
-	color: #fff;
-	text-align: center;
-	background-color: #cf4646;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 .header-title {
 	margin: 0;
@@ -325,41 +308,6 @@ The header styling
 	.main-navigation {
 		display: none;
 	}
-}
-
-#menu-main-nav {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	list-style: none;
-	background-color: #333;
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-#menu-main-nav:after {
-	clear: both;
-	content: "";
-	display: table;
-}
-
-#menu-main-nav li {
-	width: 20%;
-	float: left;
-	padding-left: 0.66667%;
-	padding-right: 0.66667%;
-	display: inline-block;
-}
-
-#menu-main-nav a {
-	text-decoration: none;
-	color: #fff;
-	display: block;
-	padding: 2em 0;
-	transition-duration: 0.3s;
-}
-
-#menu-main-nav a:hover {
-	background-color: #2f0c0c;
 }
 
 @keyframes blink {

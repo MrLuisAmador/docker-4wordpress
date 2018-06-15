@@ -6,6 +6,12 @@ import '../css/main.scss';
 
 // Load in your theme's images:
 import '../img/mugshot.png';
+import '../img/bck-quote-alt.png';
+import '../img/feature-laptop.svg';
+import '../img/feature-mg-laptop.svg';
+import '../img/magento-logo.svg';
+import '../img/small-magento-logo.svg';
+import '../img/wporg-logo.svg';
 
 jQuery( function( $ ) {
 
