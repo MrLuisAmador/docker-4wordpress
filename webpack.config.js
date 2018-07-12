@@ -9,12 +9,12 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   context: __dirname,
-  entry: "./ashworth-theme/src/js/main.js",
+  entry: "./webpack4wp-theme/src/js/main.js",
   devtool: "inline-source-map",
   output: {
-    path: path.resolve(__dirname, "ashworth-theme/assets"),
+    path: path.resolve(__dirname, "webpack4wp-theme/assets"),
     filename: "./js/bundle.js",
-    publicPath: "ashworth-theme/assets"
+    publicPath: "webpack4wp-theme/assets"
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"]
