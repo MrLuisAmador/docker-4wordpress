@@ -2,12 +2,36 @@
 
 This project aims to solve having to recreate your WordPress local development environment a billion times when starting a
 new WordPress project. This will fast forward your setup time so that you can get straight to coding.
+
 ## Continuous Development
 
 The second goal of the project was to be able to hand off or share the Docker environment with a team. They should be able to start the Docker container and contribute to the project.
 
+## Prerequisites
 
-Use `docker-compose up` to boot up the environment.
+The following items should have already been installed on you system. If not, please do so now.
+
+1. Node and NPM
+1. Composer
+1. Docker
+1. VS Code
+
+
+
+## Installation
+
+1. Download load the project [here.](https://github.com/MrLuisAmador/docker-4wordpress/archive/develop.zip)
+
+1. Run `npm install` 
+
+1. Run `composer install` 
+
+1. Run `docker-compose up` to boot up the environment.
+
+## Project Instructions ( NPM Script )
+
+1. For any new, first run project, you will need to initialize. The command to run is `npm run init` .
+Once this is done, you shouldn't have to run this command ever again for the life cycle of your project.
 
 ## Database Backup
 There's a command to back up the database. Docker is able to boot up and use that database to keep a persistent copy of where you left of when the database was saved. If you plan to have another developer help with the project, save the database, commit it and anyone helping should be able to pick up right where you left off.

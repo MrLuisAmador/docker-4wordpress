@@ -84,7 +84,6 @@ module.exports = {
       }
     ]
   },
-
   plugins: [
     extractSass,
     new BrowserSyncPlugin({
