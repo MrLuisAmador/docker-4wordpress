@@ -8,18 +8,17 @@
         }
     ],
     "require": {
-        "ashworthcreative/ashworth-theme": "dev-master",
-        "wpackagist-plugin/wordpress-seo": "*",
-        "wpackagist-plugin/custom-post-type-ui": "*"
+        "mrluisamador/docker-4wordpress-theme": "dev-master"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "wimg/php-compatibility": "*"
+        "wimg/php-compatibility": "*",
+        "squizlabs/php_codesniffer": "*"
     },
     "extra": {
         "installer-paths": {
-            "{$name}/": ["ashworthcreative/ashworth-theme"]
+            "{$name}/": ["mrluisamador/docker-4wordpress-theme"]
         }
     }
 }

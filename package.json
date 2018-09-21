@@ -5,9 +5,9 @@
   "scripts": {
     "webpack": "webpack",
     "init": "docker-compose up -d",
-    "start": "docker-compose up -d && rimraf webpack4wp-theme/assets && npm run webpack -- --mode development --watch",
+    "start": "docker-compose up -d && rimraf docker-4wordpress-theme/assets && npm run webpack -- --mode development --watch",
     "stop": "docker-compose stop",
-    "prod": "rimraf webpack4wp-theme/assets && npm run webpack -- --mode production",
+    "prod": "rimraf docker-4wordpress-theme/assets && npm run webpack -- --mode production",
     "build": "webpack -p",
     "savedb": "docker exec database sh -c 'exec mysqldump --all-databases -uroot -p\"$MYSQL_ROOT_PASSWORD\"' > ./initdb/data.sql",
     "wp": "docker run -it --rm --volumes-from wordpress --network container:wordpress wordpress:cli"
@@ -39,7 +39,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.24.7",
     "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.12.1",
@@ -53,7 +53,7 @@
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^1.1.5",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.3",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.8",
@@ -70,9 +70,5 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
-  }
+  "dependencies": {}
 }

@@ -5,7 +5,6 @@
         "tungvn.wordpress-snippet",
         "anthonydiametrix.acf-snippet",
         "dbaeumer.vscode-eslint",
-        "shinnn.stylelint",
-        "esbenp.prettier-vscode"
+        "shinnn.stylelint"
     ]
 }
