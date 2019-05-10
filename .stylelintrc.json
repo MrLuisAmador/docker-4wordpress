@@ -1,11 +1,5 @@
 {
   "extends": [
     "stylelint-config-wordpress/scss"
-  ],
-  "plugins": [
-    "stylelint-csstree-validator"
-  ],
-  "rules": {
-    "csstree/validator": true
-  }
+  ]
 }

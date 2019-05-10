@@ -1,10 +1,9 @@
-const path = require( 'path' );
-const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
-const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
+var path = require( 'path' );
+var ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+var BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
 
-const extractSass = new ExtractTextPlugin({
-  filename: 'css/main.css',
-  disable: 'development' === process.env.NODE_ENV
+var extractSass = new ExtractTextPlugin({
+  filename: 'css/main.css'
 });
 
 module.exports = {
@@ -28,17 +27,17 @@ module.exports = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.jsx?$/,
+        test: /\.js?$/,
         loader: 'eslint-loader',
         exclude: /(node_modules|bower_components)/
       },
       {
-        test: /\.jsx?$/,
+        test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [ 'env' ]
+            presets: [ '@babel/preset-env' ]
           }
         }
       },

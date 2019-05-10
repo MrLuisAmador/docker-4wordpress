@@ -5,3 +5,4 @@
 /initdb/data.sql
 /lu-theme/assets
 .idea
+.DS_Store
