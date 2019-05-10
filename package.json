@@ -53,7 +53,7 @@
     "stylelint": "^10.0.1",
     "stylelint-config-wordpress": "^14.0.0",
     "webpack": "^3.0.2",
-    "webpack-cli": "^3.3.1"
+    "webpack-cli": "^3.3.2"
   },
   "dependencies": {}
 }
