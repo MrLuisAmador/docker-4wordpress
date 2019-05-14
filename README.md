@@ -30,9 +30,23 @@ The following items should have already been installed on you system. If not, pl
 
 ## Project Features
 
-1. This project comes with a collection of PHP_CodeSniffer rules (sniffs) to validate code developed for WordPress. It ensures code quality and adherence to coding conventions, especially the official WordPress Coding Standards.
+1. WordPress Coding Standard built in
 
-1.
+    1. PHP linting to WordPress coding standards.
+
+    1. JavaScript linting to WordPress coding standards.
+
+    1. CSS linting to WordPress coding standards.
+
+1. Sass compiling for a module CSS approach.
+
+1. Hot reloading on CSS and JS edits.
+
+1. Babel for using latest JavaScript syntax.
+
+1. Browser-Sync to test UI accross multiple devices.
+
+1. More features to come...
 
 ### Database Backup
 There's a command to back up the database. Docker is able to boot up and use that database to keep a persistent copy of where you left of when the database was saved. If you plan to have another developer help with the project, save the database, commit it and anyone helping should be able to pick up right where you left off.
