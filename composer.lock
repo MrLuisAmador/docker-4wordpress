@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MrLuisAmador/docker-4wordpress-theme.git",
-                "reference": "cc98d76a7e88944b5f60ff587eda36c513fe5b3e"
+                "reference": "231e6a0ef900274d138162e2672cea359e5c4119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MrLuisAmador/docker-4wordpress-theme/zipball/cc98d76a7e88944b5f60ff587eda36c513fe5b3e",
-                "reference": "cc98d76a7e88944b5f60ff587eda36c513fe5b3e",
+                "url": "https://api.github.com/repos/MrLuisAmador/docker-4wordpress-theme/zipball/231e6a0ef900274d138162e2672cea359e5c4119",
+                "reference": "231e6a0ef900274d138162e2672cea359e5c4119",
                 "shasum": ""
             },
             "require": {
@@ -149,7 +149,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "This theme is just a packaged version of the Automatic Underscore theme to be used with my docker environment.",
-            "time": "2019-05-10T05:56:48+00:00"
+            "time": "2019-05-14T03:05:54+00:00"
         }
     ],
     "packages-dev": [

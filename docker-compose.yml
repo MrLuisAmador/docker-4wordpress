@@ -2,7 +2,7 @@ version: '3'
 services:
   wordpress:
     container_name: wordpress
-    image: wordpress:php7.1
+    image: wordpress:latest
     restart: always
     ports:
       - "80:80"
